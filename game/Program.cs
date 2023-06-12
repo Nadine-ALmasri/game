@@ -17,12 +17,14 @@ namespace MathGame
             }
             finally
             {
+                Console.WriteLine(" The Game Is Over!!");
                 Console.WriteLine("Program completed.");
             }
         }
 
         static void StartSequence()
         {
+            Console.WriteLine("Welcome To The Game !!");
             Console.WriteLine("Enter a number greater than zero:");
             int size = Convert.ToInt32(Console.ReadLine());
 
