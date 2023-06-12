@@ -2,7 +2,7 @@
 using System;
 
 namespace MathGame
-{//nbvmvmv
+{
     class Program
     {
         static void Main(string[] args)
@@ -13,7 +13,7 @@ namespace MathGame
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred in here: " + ex.Message);
+                Console.WriteLine("An error occurred which is: " + ex.Message);
             }
             finally
             {
@@ -26,7 +26,7 @@ namespace MathGame
             Console.WriteLine("Enter a number greater than zero:");
             int size = Convert.ToInt32(Console.ReadLine());
 
-            if (size <= 0)
+            if (size<= 0)
                 throw new Exception("Number should be greater than zero.");
 
             int[] numbers = new int[size];
@@ -44,7 +44,7 @@ namespace MathGame
         {
             for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine($"Please enter number {i + 1}/{numbers.Length}:");
+                Console.WriteLine($"Please enter number {i + 1} of {numbers.Length}:");
                 numbers[i] = Convert.ToInt32(Console.ReadLine());
             }
             return numbers;
