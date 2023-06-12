@@ -2,7 +2,7 @@
 using System;
 
 namespace MathGame
-{
+{//nbvmvmv
     class Program
     {
         static void Main(string[] args)
@@ -13,7 +13,7 @@ namespace MathGame
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred: " + ex.Message);
+                Console.WriteLine("An error occurred in here: " + ex.Message);
             }
             finally
             {
